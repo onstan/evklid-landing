@@ -496,7 +496,20 @@ ul {
   font-family: inherit;
 }
 
-.ui-accordion .ui-accordion-header {
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 24px;
+  height: 113px;
+  /* padding-top: 38px; */
+  padding-left: 5px;
+  /* position: relative; */
+  font-weight: bold;
+  color: #333333;
+}
+
+/* .ui-accordion .ui-accordion-header {
   font-size: 24px;
   height: 113px;
   padding-top: 38px;
@@ -504,18 +517,18 @@ ul {
   position: relative;
   font-weight: bold;
   color: #333333;
-}
+} */
 
-.ui-state-default,
+/* .ui-state-default,
 .ui-state-active {
   border: none;
   border-top: 1px solid #CACACA;
   background: none;
-}
+} */
 
-.ui-accordion:last-child {
+/* .ui-accordion:last-child {
   border-bottom: 1px solid #CACACA;
-}
+} */
 
 .slash {
   opacity: 0.3;
@@ -528,42 +541,63 @@ ul {
   max-width: 60%;
 }
 
-.ui-accordion-header:hover,
-.ui-accordion-header:active {
+.accordion__header:hover,
+.accordion__header:active {
   color: #FF9900;
-}
-
-.ui-accordion-header:hover {
   cursor: pointer;
 }
 
-.ui-accordion-header-icon {
+.accordion__btn {
+  width: 50px;
+  height: 50px;
+  background-image: url('img/+х.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+  border: none;
+  flex-shrink: 0;
+}
+/*
+.ui-accordion-header:hover {
+  cursor: pointer;
+} */
+
+/* .ui-accordion-header-icon {
   content: '';
   position: absolute;
   right: 10px;
   top: 32px;
-  width: 50px;
-  height: 50px;
   display: inline-block;
-  background-image: url('img/+х.svg');
-  background-position: center;
+} */
+
+.accordion__btn:hover {
+  filter: contrast(81%);
+  cursor: pointer;
 }
 
-.ui-state-hover .ui-icon,
+.ui-accordion-header-active .accordion__btn:active {
+  transform: matrix(-0.71, -0.71, -0.71, 0.71, 0, 0);
+  transition: ease-in-out 300ms;
+}
+
+#accordion .ui-icon {
+  display: none;
+}
+
+/* .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon,
 .ui-state-active .ui-icon {
   background-image: url('img/+х.svg');
 }
 
 .ui-state-hover .ui-icon {
-  filter: contrast(81%);
-  cursor: pointer;
-}
 
-.ui-state-active .ui-icon {
-  transform: matrix(-0.71, -0.71, -0.71, 0.71, 0, 0);
-  transition: ease-in-out 300ms;
-}
+} */
+
+/* .ui-state-active .ui-icon {
+
+} */
 
 .footer {
   max-width: 1920px;
