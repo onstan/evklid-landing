@@ -468,7 +468,6 @@ textarea {
 .details-btn:focus,
 .details-btn:active {
   background-color: rgba(255, 153, 0, 0.6);
-  ;
 }
 
 .contract-btn {
@@ -514,8 +513,9 @@ textarea {
   height: 113px;
 }
 
-.accordion-header:hover>.accordion__title,
-.accordion-header:active>.accordion__title {
+.accordion__title:hover,
+.accordion__title:active {
+  transition: color .2s ease-in-out;
   color: #FF9900;
   cursor: pointer;
 }
@@ -1456,6 +1456,7 @@ textarea {
     color: #FF9900;
   }
 
+  .details-empty-btn:hover,
   .details-empty-btn:active,
   .details-empty-btn:focus {
     background-color: #FF9900;
