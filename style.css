@@ -196,17 +196,17 @@ textarea {
 }
 
 .swiper-slide:first-child {
-  background: url('img/low-angle-photo-of-balconies-2462015\ 1.jpg') no-repeat;
+  background: url('img/balconies-large.jpg') no-repeat;
   background-size: cover;
 }
 
 .swiper-slide:nth-of-type(2) {
-  background: url('img/brown-and-blue-glass-building-2093076\ 1.jpg') no-repeat;
+  background: url('img/glass-building.jpg') no-repeat;
   background-size: cover;
 }
 
 .swiper-slide:last-child {
-  background: url('img/apartment-apartment-building-architecture-building-323705\ 1.jpg') no-repeat;
+  background: url('img/apartment.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -940,7 +940,8 @@ textarea {
   }
 
   .swiper-slide:first-child {
-    background: url('img/low-angle-photo-of-balconies-2462015\ 1\ tablet.jpg') no-repeat;
+    background: url('img/balconies-1024-opt.jpg') no-repeat;
+    background-size: cover;
   }
 
   .swiper-slide:nth-of-type(2) {
@@ -1139,7 +1140,7 @@ textarea {
   }
 
   .swiper-slide:first-child {
-    background: url('img/low-angle-photo-of-balconies-2462015\ 1\ 768.jpg') no-repeat;
+    background: url('/img/balconies-768.jpg') no-repeat;
     background-size: cover;
   }
 
